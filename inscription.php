@@ -4,49 +4,50 @@
 	{
 		$okInscr = true;
 		var_dump($_POST);
-		if($okInscr && !isset($_POST['id']) && empty($_POST['id']))
+		if($okInscr && (!isset($_POST['id']) || empty($_POST['id'])))
 		{
 			$okInscr = false;
 		}
 		var_dump($okInscr);
-		if($okInscr && !isset($_POST['mdp']) && empty($_POST['mdp']))
+		if($okInscr && (!isset($_POST['mdp']) || empty($_POST['mdp'])))
 		{
 			$okInscr = false;
 		}
 		var_dump($okInscr);
-		if($okInscr && !isset($_POST['nom']) && empty($_POST['nom']))
+		if($okInscr && (!isset($_POST['nom']) || empty($_POST['nom'])))
 		{
 			$okInscr = false;
 		}
 		var_dump($okInscr);
-		if($okInscr && !isset($_POST['prenom']) && empty($_POST['prenom']))
+		if($okInscr && (!isset($_POST['prenom']) || empty($_POST['prenom'])))
 		{
 			$okInscr = false;
 		}
 		var_dump($okInscr);
-		if($okInscr && !isset($_POST['mail']) && empty($_POST['mail']))
+		if($okInscr && (!isset($_POST['mail']) || empty($_POST['mail'])))
 		{
 			$okInscr = false;
 		}
 		var_dump($okInscr);
-		if($okInscr && !isset($_POST['satut']) && empty($_POST['satut']))
+		/*if($okInscr && (!isset($_POST['satut']) || empty($_POST['satut'])))
 		{
+			echo("test");
 			$okInscr = false;
 		}
 		var_dump($okInscr);
-		if($okInscr && !isset($_POST['campus']) && empty($_POST['campus']))
+		if($okInscr && (!isset($_POST['campus']) || empty($_POST['campus'])))
 		{
 			$okInscr = false;
-		}
+		}*/
 		var_dump($okInscr);
 		if($okInscr)
 		{
 			$recup=$connexion->prepare("SELECT COUNT(*) FROM user WHERE id=:idS");
-			$recup=$connexion->prepare("SELECT COUNT(*) FROM user WHERE mail=:mailS");
+			//$recup=$connexion->prepare("SELECT COUNT(*) FROM user WHERE mail=:mailS");
 			$recup->bindParam(':idS', $_POST['id'], PDO::PARAM_STR, 100);
-			$recup->bindParam(':mailS', $_POST['mail'], PDO::PARAM_STR, 150);
+			//$recup->bindParam(':mailS', $_POST['mail'], PDO::PARAM_STR, 150);
 			$recup->execute();
-			$donnee = $recup->fetchAll;
+			$donnee = $recup->fetchAll();
 			var_dump($donnee);
 		}
 	}
