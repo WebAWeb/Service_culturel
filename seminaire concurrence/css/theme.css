@@ -113,6 +113,7 @@ font-size:20px;
 font-family: gravity book;
 text-align:justify;
 clear:both;
+font-size:17px;
 }
 
 ul{
@@ -141,15 +142,67 @@ font-size:15px;
 .buttonevenement{
 float:right;
 margin-bottom:10px;
+background-color:#22519c;
+border:none;
+padding:5px;
+color:white;
+padding-right:20px;
+padding-left:20px;
 }
 
 .textbisevenement{
 padding-bottom:40px;
 }
 
-.test{
+.trait{
 border-bottom:solid 2px #8d8d8d;
 margin-bottom:20px;
+margin-top:50px;
+}
+
+.lienretour{
+color:black;
+float:right;
+font-family: gravity book;
+font-size:20px;
+}
+
+.lienretour:hover{
+color:black;
+}
+
+.imgpdf{
+float:left;
+width:110px;
+height:80px;
+}
+
+.textclear{
+clear:both;
+}
+
+.containerdl{
+border-left:solid 2px #8d8d8d;
+padding:20px;
+}
+
+.lienpdf{
+color:black;
+}
+
+.lienpdf:hover{
+color:black;
+}
+
+.textpdf{
+padding-top:30px;
+}
+
+.containerinfoprojet{
+margin-top:15%;
+border-top:solid 2px #8d8d8d;
+padding:20px;
+font-size:20px;
 }
 
 /* ==========================================================================
