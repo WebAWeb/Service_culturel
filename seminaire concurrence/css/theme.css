@@ -131,6 +131,7 @@ color:black;
 
 .dateevenement{
 text-align:right;
+font-family:antipasto;
 }
 
 .lieuevenement{
@@ -140,6 +141,15 @@ font-size:15px;
 .buttonevenement{
 float:right;
 margin-bottom:10px;
+}
+
+.textbisevenement{
+padding-bottom:40px;
+}
+
+.test{
+border-bottom:solid 2px #8d8d8d;
+margin-bottom:20px;
 }
 
 /* ==========================================================================
