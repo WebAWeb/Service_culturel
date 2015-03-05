@@ -14,6 +14,7 @@ color:white;
 
 .lien{
 color:white;
+font-family: gravity book;
 }
 
 .lien:hover{
@@ -25,15 +26,120 @@ color:black;
   Container
    ========================================================================== */
 
-#container{
-border:solid 2px silver;
+.containerbis{
 margin-left:20px;
 margin-bottom:20px;
 padding:20px;
 }
 
+.containerbisevenement{
+margin-left:20px;
+margin-bottom:20px;
+padding:20px;
+}
+
+.containerbisevenement:hover{
+background-color:#f4d416;
+}
+
 #base{
 margin:5%;
+}
+
+.invisible{
+height:50px;
+}
+
+.titre{
+color:#e60b57;
+font-family: gravity book;
+margin-bottom:20px;
+font-size:30px;
+}
+
+.soustitre{
+color:#e60b57;
+font-size:20px;
+font-family: gravity book;
+}
+
+.text{
+font-family: gravity book;
+font-size:17px;
+margin-bottom:5%;
+}
+
+span{
+color:#e60b57;
+}
+
+.inscriptionlien{
+padding:10px;
+font-size:22px;
+font-family: gravity book;
+color:white;
+background-color:#e60b57;
+width:100%;
+}
+
+.inscriptionlien:hover{
+text-decoration:none;
+color:white;
+}
+
+.filtre{
+margin-top:40px;
+}
+
+.filtrecategorie{
+border-bottom:solid 1px #8d8d8d;
+}
+
+.imgevenement{
+width:100%;
+}
+
+.titreevenement{
+font-family: gravity book;
+font-size:30px;
+}
+
+.soustitreevenement{
+font-family: gravity book;
+font-size:20px;
+}
+
+.textevenement{
+font-family: gravity book;
+text-align:justify;
+clear:both;
+}
+
+ul{
+margin-left:-40px;
+}
+
+.lienevenement{
+color:black;
+}
+
+.lienevenement:hover{
+text-decoration:none;
+opacity:0.8;
+color:black;
+}
+
+.dateevenement{
+text-align:right;
+}
+
+.lieuevenement{
+font-size:15px;
+}
+
+.buttonevenement{
+float:right;
+margin-bottom:10px;
 }
 
 /* ==========================================================================
@@ -41,9 +147,10 @@ margin:5%;
    ========================================================================== */
 
 footer{
-background-color:white;
+background-color:#383d40;
 padding-right:10%;
 padding-left:10%;
+color:white;
 }
 
 .imgfooter{
@@ -55,11 +162,10 @@ height:80px;
 .copyright{
 clear:both;
 text-align:center;
-padding:10px;
+padding:20px;
 }
 
 .textfooter{
-border-top:solid 2px silver;
 padding:10px;
 }
 
@@ -92,15 +198,6 @@ a.twitter-timeline:focus {
 a.twitter-timeline:focus {
   outline: none;
   border-color: #0089cb;
-}
-
-#filtre{
-width:150px;
-height:300px;
-float:left;
-border:solid 2px grey;
-position:fixed;
-background-color:silver;
 }
 
 /* ==========================================================================
@@ -198,10 +295,6 @@ width: 100%;
 .owl-item.loading{
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
-}
-
-#invisible{
-height:50px;
 }
 
 
