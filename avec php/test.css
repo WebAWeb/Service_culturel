@@ -1,0 +1,16 @@
+#mire
+{
+	display: block; 
+	height: 0px;
+	overflow: hidden;
+}
+
+#mire form
+{
+	height: auto;
+}
+
+#mire *
+{
+	display:block;
+}
